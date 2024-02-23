@@ -37,33 +37,55 @@
 
 //Программа, которая выводит третью слева цыфру заданного числа или сообщает что ее не.
 
-//Console.Write("Введите число: ");
-//int num1 = Convert.ToInt32(Console.ReadLine());
-//int num2 = 0;
-//  if (num1 < 100)
-//{
-// Console.WriteLine($"Третий цифры нет");
-//}
-//else
-//{
-//    while (num1 > 100)
-//    {
-//        num1 /= 10;
-//    }
-//    Console.WriteLine(num1);
-//    num2 = num1 % 10;
-//    Console.WriteLine(num2);
-//}
-
-
+Console.Write("Введите число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
-int num2 = Convert.ToInt32(Console.ReadLine());
-if(num1 % 7 == 0)
-if(num2 % 23 == 0)
+int num2 = 0;
+  if (num1 < 100)
 {
-    Console.WriteLine($"Число {num1} не являеться кратным {num2}!");
+ Console.WriteLine($"Третий цифры нет");
 }
 else
 {
-    Console.WriteLine($"Число {num2} являеться кратным {num1}!");
+    while (num1 > 100)
+    {
+        num1 /= 10;
+    }
+    Console.WriteLine(num1);
+    num2 = num1 % 10;
+    Console.WriteLine(num2);
 }
+
+//public class Answer {
+//static void CompareNumbers(int firstNumber, int secondNumber)
+//{
+   // Введите свое решение ниже
+   //if (firstNumber > secondNumber)
+  //{
+  // Console.WriteLine($"Большее число: {firstNumber}");
+  //    }
+ //else if (firstNumber < secondNumber)
+ //{
+  // Console.WriteLine($"Большее число: {secondNumber}");
+  //}
+ //else 
+ //{
+ //Console.WriteLine ($"Числа равны");
+ //}
+ //}
+  // Не удаляйте и не меняйте метод Main! 
+  //static public void Main(string[] args) {
+  //int firstNumber, secondNumber;
+ //if (args.Length >= 2) {
+ //firstNumber = int.Parse(args[0]);
+ //secondNumber = int.Parse(args[1]);
+  //} 
+  //else 
+  //{
+ // Здесь вы можете поменять значения для отправки кода на Выполнение
+ //firstNumber = 5;
+ //secondNumber = 6;
+ //}
+ // Не удаляйте строки ниже
+ //CompareNumbers(firstNumber, secondNumber);
+ // }
+//}
