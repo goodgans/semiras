@@ -1,0 +1,15 @@
+C:\Users\Димон\Desktop\seminars\seminars\bin\Debug\net8.0\seminars.exe
+C:\Users\Димон\Desktop\seminars\seminars\bin\Debug\net8.0\seminars.deps.json
+C:\Users\Димон\Desktop\seminars\seminars\bin\Debug\net8.0\seminars.runtimeconfig.json
+C:\Users\Димон\Desktop\seminars\seminars\bin\Debug\net8.0\seminars.dll
+C:\Users\Димон\Desktop\seminars\seminars\bin\Debug\net8.0\seminars.pdb
+C:\Users\Димон\Desktop\seminars\seminars\obj\Debug\net8.0\seminars.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Димон\Desktop\seminars\seminars\obj\Debug\net8.0\seminars.AssemblyInfoInputs.cache
+C:\Users\Димон\Desktop\seminars\seminars\obj\Debug\net8.0\seminars.AssemblyInfo.cs
+C:\Users\Димон\Desktop\seminars\seminars\obj\Debug\net8.0\seminars.csproj.CoreCompileInputs.cache
+C:\Users\Димон\Desktop\seminars\seminars\obj\Debug\net8.0\seminars.sourcelink.json
+C:\Users\Димон\Desktop\seminars\seminars\obj\Debug\net8.0\seminars.dll
+C:\Users\Димон\Desktop\seminars\seminars\obj\Debug\net8.0\refint\seminars.dll
+C:\Users\Димон\Desktop\seminars\seminars\obj\Debug\net8.0\seminars.pdb
+C:\Users\Димон\Desktop\seminars\seminars\obj\Debug\net8.0\seminars.genruntimeconfig.cache
+C:\Users\Димон\Desktop\seminars\seminars\obj\Debug\net8.0\ref\seminars.dll
