@@ -37,23 +37,23 @@
 
 //Программа, которая выводит третью слева цыфру заданного числа или сообщает что ее не.
 
-Console.Write("Введите число: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-int num2 = 0;
-  if (num1 < 100)
-{
- Console.WriteLine($"Третий цифры нет");
-}
-else
-{
-    while (num1 > 100)
-    {
-        num1 /= 10;
-    }
-    Console.WriteLine(num1);
-    num2 = num1 % 10;
-    Console.WriteLine(num2);
-}
+//Console.Write("Введите число: ");
+//int num1 = Convert.ToInt32(Console.ReadLine());
+//int num2 = 0;
+//  if (num1 < 100)
+//{
+// Console.WriteLine($"Третий цифры нет");
+//}
+//else
+//{
+//    while (num1 > 100)
+//    {
+//        num1 /= 10;
+//    }
+//    Console.WriteLine(num1);
+//    num2 = num1 % 10;
+//    Console.WriteLine(num2);
+//}
 
 //public class Answer {
 //static void CompareNumbers(int firstNumber, int secondNumber)
@@ -89,3 +89,137 @@ else
  //CompareNumbers(firstNumber, secondNumber);
  // }
 //}
+
+//Внутри класса Answer напишите метод CompareNumbers, который на вход принимает два числа и выводит, какое 
+//число большее, а какое меньшее.
+//Пример использования:На входе:firstNumber: '5'secondNumber: '6'На выходе:второе число больше На входе: 
+//firstNumber: '6'secondNumber: '3'На выходе:первое число больше На входе:firstNumber: '3'secondNumber: '3'
+//На выходе: числа равны
+
+//public class Answer {
+//    static void CompareNumbers(int firstNumber, int secondNumber)
+//    {
+//        if (firstNumber == secondNumber)
+//        { 
+//           Console.WriteLine($"числа равны");
+//        }
+//        if (firstNumber > secondNumber)
+//        {
+//            Console.WriteLine($"первое число больше`");
+//        }
+//        if (firstNumber < secondNumber)
+//        {
+//            Console.WriteLine($"второе число больше");
+//        }
+//    }
+//    static public void Main(string[] args) {
+//        int firstNumber, secondNumber;
+//        if (args.Length >= 2) {
+//            firstNumber = int.Parse(args[0]);
+//            secondNumber = int.Parse(args[1]);
+//        } else {
+//            firstNumber = 5;
+//            secondNumber = 5;
+//        }
+//        CompareNumbers(firstNumber, secondNumber);
+//    }
+//}
+//Внутри класса Answer напишите метод FindMax, который принимает на вход три числа
+// и выдаёт максимальное из этих чисел.
+
+//public class Answer {
+//    static int FindMax(int a, int b, int c)
+//    {
+//      int max = a;
+//        if (max < b)
+//        {
+//            max = b;
+//        }
+//        if (max < c)
+//        {
+//            max = c;
+//        }
+//        return max;
+//    }
+//    static public void Main(string[] args) {
+//        int a, b, c;
+//        if (args.Length >= 3) {
+//            a = int.Parse(args[0]);
+//            b = int.Parse(args[1]);
+//            c = int.Parse(args[2]);
+//        } else {
+//            a = 5;
+//            b = 6;
+//            c = 7;
+//        }
+//        int result = FindMax(a, b, c);
+//        System.Console.WriteLine($"{result}");
+//    }
+//}
+
+//Внутри класса Answer напишите метод CheckIfEven, который на вход принимает число number и выводит, 
+//является ли число чётным (делится ли оно на два без остатка).
+//Пример использования:
+//На входе:
+//number: '6'
+//На выходе:
+//четное
+//На входе:
+//number: '3'
+//На выходе:
+//нечетное
+
+//class Answer {
+//    static void CheckIfEven(int number)
+//    {
+//        if ((number % 2) == 0)
+//        {
+//            Console.WriteLine($"четное");
+//        }
+//        else
+//        {
+//            Console.WriteLine($"нечетное");
+//        }
+//    }
+//    static public void Main(string[] args) {
+//        int number;
+//        if (args.Length >= 1) {
+//            number = int.Parse(args[0]);
+//        } else {
+//            number = 6;
+//        }
+//        CheckIfEven(number);
+//    }
+//}
+
+//Внутри класса Answer напишите метод PrintEvenNumbers, которая на вход принимает число (number),
+// а на выходе выводит все чётные числа от 1 до number (включительно), 
+//после каждого числа должен быть знак пробела.
+//На входе:
+//number = 5 
+//На выходе:
+//2 4 
+//На входе:
+//number = 8 
+//На выходе:
+//2 4 6 8 
+
+//public class Answer {
+//    static void PrintEvenNumbers(int number)
+//    {
+//        for (int count = 2; count <= number; count += 2)
+//        {
+//            Console.Write($"{count} ");
+//        }
+//    }
+//    static public void Main(string[] args) {
+//        int number;
+//        if (args.Length >= 1) {
+//            number = int.Parse(args[0]);
+//        } else {
+//            number = 6;
+//        }
+//        PrintEvenNumbers(number);
+//    }
+//}
+
