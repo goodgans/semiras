@@ -12,13 +12,13 @@
 //Console.WriteLine(num);
 // if(num <= 999 && num >= 100)
 //{
-  //  int num3 = num %10;
-  //  int num2 = num / 10 % 10;
-    //Console.WriteLine(Math.Pow(num2, num3));
+//  int num3 = num %10;
+//  int num2 = num / 10 % 10;
+//Console.WriteLine(Math.Pow(num2, num3));
 //}
 // else
 //{
-   // Console.WriteLine($"Число не трехзначное");
+// Console.WriteLine($"Число не трехзначное");
 //}
 
 //Программа, которая будет принимать на вход два числа и выводить, являеться ли второе число кратным первому
@@ -58,36 +58,36 @@
 //public class Answer {
 //static void CompareNumbers(int firstNumber, int secondNumber)
 //{
-   // Введите свое решение ниже
-   //if (firstNumber > secondNumber)
-  //{
-  // Console.WriteLine($"Большее число: {firstNumber}");
-  //    }
- //else if (firstNumber < secondNumber)
- //{
-  // Console.WriteLine($"Большее число: {secondNumber}");
-  //}
- //else 
- //{
- //Console.WriteLine ($"Числа равны");
- //}
- //}
-  // Не удаляйте и не меняйте метод Main! 
-  //static public void Main(string[] args) {
-  //int firstNumber, secondNumber;
- //if (args.Length >= 2) {
- //firstNumber = int.Parse(args[0]);
- //secondNumber = int.Parse(args[1]);
-  //} 
-  //else 
-  //{
- // Здесь вы можете поменять значения для отправки кода на Выполнение
- //firstNumber = 5;
- //secondNumber = 6;
- //}
- // Не удаляйте строки ниже
- //CompareNumbers(firstNumber, secondNumber);
- // }
+// Введите свое решение ниже
+//if (firstNumber > secondNumber)
+//{
+// Console.WriteLine($"Большее число: {firstNumber}");
+//    }
+//else if (firstNumber < secondNumber)
+//{
+// Console.WriteLine($"Большее число: {secondNumber}");
+//}
+//else 
+//{
+//Console.WriteLine ($"Числа равны");
+//}
+//}
+// Не удаляйте и не меняйте метод Main! 
+//static public void Main(string[] args) {
+//int firstNumber, secondNumber;
+//if (args.Length >= 2) {
+//firstNumber = int.Parse(args[0]);
+//secondNumber = int.Parse(args[1]);
+//} 
+//else 
+//{
+// Здесь вы можете поменять значения для отправки кода на Выполнение
+//firstNumber = 5;
+//secondNumber = 6;
+//}
+// Не удаляйте строки ниже
+//CompareNumbers(firstNumber, secondNumber);
+// }
 //}
 
 //Внутри класса Answer напишите метод CompareNumbers, который на вход принимает два числа и выводит, какое 
@@ -223,3 +223,94 @@
 //    }
 //}
 
+using Microsoft.VisualBasic;
+
+Console.Write("Введите размерность массива: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[] mas = new int[n];
+//Console.WriteLine(mas);
+
+
+//While
+int ind = 0;
+while (ind < mas.Length)
+{
+   Console.Write($"{mas[ind]} ");
+   ind++;
+}
+Console.WriteLine();
+
+//for
+for (int i = 0; i < mas.Length; i++)
+{
+   Console.Write($"{mas[i]} ");
+}
+Console.WriteLine();
+
+
+//foreach
+foreach (var item in mas)
+{
+   Console.Write($"{item} ");
+}
+Console.WriteLine();
+
+
+void Print_mas(int[] col)
+{
+   foreach (var item in col)
+   {
+      Console.Write($"{item} ");
+   }
+   Console.WriteLine();
+}
+
+Print_mas(mas);
+
+//функция рандом
+int[] Random_mas(int[] col)
+{
+   for (int i = 0; i < col.Length; i++)
+   {
+      col[i] = new Random().Next(1, 10);
+   }
+   return col;
+}
+
+int[] new_mas = Random_mas(mas);
+Print_mas(new_mas);
+
+int[] ReadLine_mas(int[] col)
+{
+   for (int i = 0; i < col.Length; i++)
+   {
+     Console.WriteLine($"Введите {i} элемент массива");
+     col[i] = Convert.ToInt32(Console.ReadLine());
+   }
+   return col;
+}
+
+int[] new_mas2 = ReadLine_mas(mas);
+Print_mas(new_mas2);
+
+Console.Write("Введите искомое число: ");
+int m = Convert.ToInt32(Console.ReadLine());
+
+int c_R = 0;
+int c_C = 0;
+
+for (int i = 0; i < mas.Length; i++)
+{
+   if(new_mas[i] == m) c_R ++;
+   if(new_mas2[i] ==m) c_C ++;
+}
+Console.WriteLine(c_R + " " + c_C);
+if(c_R == 0 && c_C == 0)
+{
+   Console.WriteLine("Нет");
+}
+   else
+{
+  if (c_R > 0) Console.WriteLine("Искомый элемент найден в массиве new_mas");
+  if (c_C > 0) Console.WriteLine("Искомый элемент найден в массиве new_mas2");
+}
